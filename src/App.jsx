@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Hero from './Components/Hero';
 import TrustedBy from './Components/TrustedBy';
 import Services from './Components/Services';
+import Ourwork from './Components/Ourwork';
+import Teams from './Components/teams';
 
 const App = () => {
 
@@ -15,6 +17,8 @@ const App = () => {
       <Hero/>
       <TrustedBy/>
       <Services/>
+      <Ourwork/>
+      <Teams/>
     </div>
   )
 }

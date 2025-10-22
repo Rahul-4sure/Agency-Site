@@ -16,8 +16,6 @@ const Navbar = ({theme,setTheme}) => {
         <img src={theme === 'dark'? assets.logo_dark : assets.logo} className='w-32 sm:w-40' alt="" />
       </a>
 
-        <img src={theme === 'dark'? assets.logo_dark : assets.logo} className='w-32 sm:w-40' alt="" />
-
         <div className={`text-gray-700 dark:text-white sm:text-sm ${!sidebarOpen ? 'max-sm:w-0 overflow-hidden' : 'max-sm:w-60 max-sm:pl-10'} max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}>
 
           <img src={assets.close_icon} 
@@ -35,7 +33,8 @@ const Navbar = ({theme,setTheme}) => {
         <div className='flex items-center gap-2 sm:gap-4'>
 
           <ThemeToggleBtn theme={theme} setTheme={setTheme}/>  
-          <img src={theme === 'dark' ? assets.menu_dark : assets.menu_icon} onClick={()=>{setSidebarOpen(true)}} className='w-8  sm:hidden ' />
+          
+          <img src={theme === 'dark' ? assets.menu_icon_dark : assets.menu_icon} onClick={()=>{setSidebarOpen(true)}} className='w-8  sm:hidden ' />
 
             <a href="#contact-us"
             className='text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'>
